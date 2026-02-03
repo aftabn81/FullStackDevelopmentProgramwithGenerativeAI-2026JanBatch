@@ -7,23 +7,33 @@
 </head>
 <body>
     <script>
-        var id=100;
-        document.write("Id is "+id)
-         id=200;         // re-assign 
-        document.write("<br/>Id is "+id)
-        var id = 300; // re-declare same variable once again with same or different value 
-        document.write("<br/>Id is "+id)
-            let fname = "Raj";
-        document.write("<br/> Name is "+fname)
-            fname = "Raj Deep";      // re-assign 
-        document.write("<br/> Name is "+fname)
-        //let fname = "John"; // using let we can't re-declare same variable once again with same or different value. 
-        fname = "John"      // re-assign 
-        document.write("<br/> Name is "+fname)
-        const PI=3.142; // fixed value 
-        document.write("<br/> Pi value is "+PI)
-        //const PI=3.142; // fixed value 
-        //PI = 4.156        // we can't change the value. 
+        //     var id=100;
+        // document.write("Id is "+id)
+        //  id=200;         // re-assign 
+        // document.write("<br/>Id is "+id)
+        //     var id = 300; // re-declare same variable once again with same or different value 
+        // document.write("<br/>Id is "+id)
+        //     let fname = "Raj";
+        // document.write("<br/> Name is "+fname)
+        //     fname = "Raj Deep";      // re-assign 
+        // document.write("<br/> Name is "+fname)
+        // //let fname = "John"; // using let we can't re-declare same variable once again with same or different value. 
+        // fname = "John"      // re-assign 
+        // document.write("<br/> Name is "+fname)
+        // const PI=3.142; // fixed value 
+        // document.write("<br/> Pi value is "+PI)
+        // //const PI=3.142; // fixed value 
+        // //PI = 4.156        // we can't change the value. 
+        //let x=100;
+        //var y=100;        // JS Hosting 
+        {
+            let x=200;          // block scope 
+            var y = 200;        // global scope 
+            console.log("x value inside block is using let "+x)   // 200
+            console.log("y value inside block is using let "+y)
+        }
+        //console.log("x value outside block is using let "+x)      // 100
+         console.log("y value outside block is using var "+y)        // 100 
     </script>
 </body>
 </html>
