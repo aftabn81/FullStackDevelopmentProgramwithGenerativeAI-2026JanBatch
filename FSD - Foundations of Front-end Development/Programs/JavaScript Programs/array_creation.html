@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<br/> Array creation")
+        let num1=[];
+        let num2=new Array();
+        let num3=[10,20,30,40,50];
+        let num4=new Array(10,20,30,40,50);
+        document.write("<br/> "+num1);
+        document.write("<br/> "+num2);
+        document.write("<br/> "+num3);
+        document.write("<br/> "+num4);
+        document.write("<br/> "+num4.join("-"));
+        document.write("<br/> "+num3[0])
+        document.write("<br/>"+num3[1])
+        document.write("<br/>"+num3[5])
+        document.write("<br/> Size of the array "+num1.length) // size of the array 
+        document.write("<br/> Size of the array "+num3.length)
+        num1.push(100);     // it add the element at last 
+        num1.push(200)
+        num1.push(300)
+        num3.push(100)
+        document.write("<br/> Size of the array "+num1.length)
+        document.write("<br/> "+num1);
+        document.write("<br/> "+num3);
+        num3.unshift(200);  // it add the element at first 
+        num3.unshift(300);  // it add the element at first 
+        document.write("<br/> "+num3);
+        num3.pop();     // remove the elements from last ie 100
+        num3.shift();   // remove the elements from first ie 300
+        document.write("<br/> "+num3);
+    </script>
+</body>
+</html>
