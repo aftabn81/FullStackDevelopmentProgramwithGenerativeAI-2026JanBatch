@@ -1,3 +1,4 @@
+import Products from "./Products";
 
 function HeaderComponent() {
   return <h2>This is my Header Component</h2>
@@ -16,13 +17,14 @@ function EmployeeComponent() {
   let name = "Akash";       // string type  
   let isActive = true;      // boolean 
   let skillSet = ["Java", "React JS", "Angular", "Node JS"];  // array type 
+  
   return(
     <div>
       <h2>Employee Details</h2>
       <p>ID: {id}</p>
       <p>Name: {name}</p>
       <p>Active: {isActive ? "Yes" : "No" }</p>  
-      <p>Skills: {skillSet.join(", ")}</p>
+      <p>Skills: {skillSet.join(",")}</p>
     </div>
   )
 }
@@ -38,6 +40,7 @@ function App(){
       <h1>Welcome to React JS</h1>
       <p>Today we are learning React JS</p>
       <EmployeeComponent></EmployeeComponent>
+      <Products></Products>
       <ButtonComponent></ButtonComponent>
       <FooterComponent></FooterComponent>
     </div>
