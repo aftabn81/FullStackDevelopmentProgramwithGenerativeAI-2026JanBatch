@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
       <h2>React State variable using useState hook</h2>
-      <PrimitiveStateVariables />
-      {/* <ArrayStateVariables/>  */}
+      {/* <PrimitiveStateVariables /> */}
+      <ArrayStateVariables/> 
       {/* <ObjectStateVariables/>  */}
       {/* <ArrayOfObjectStateVariables/> */}
     </div>
